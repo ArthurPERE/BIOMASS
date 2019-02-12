@@ -26,6 +26,8 @@ test_that("Compute E", {
   expect_length(E, 50)
 
   expect_equal(computeE(cbind(12, 50)), 1.129928, tolerance = 0.1)
+  
+  expect_error(computeE(cbind(long = -20, lat = 4)), "coordinate")
 })
 
 
