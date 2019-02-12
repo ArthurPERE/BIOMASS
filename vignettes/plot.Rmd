@@ -50,7 +50,6 @@ We can see in the table that we have for each trees the name of the plot we have
 
 
 ```{r, fig.cap="Plot the coordinate long lat"}
-```{r, fig.cap="Plot the coordinate"}
 coord <- read.csv(system.file("external", "Coord.csv",
   package = "BIOMASS", mustWork = T
 ))
@@ -69,11 +68,8 @@ In the table, we have the name of the plot, the coordinate `Lat`, `Long` (or ano
 
 
 
-
 # To manage the plots
 ## Import the dataset and visualisation
-
-You can see that the corner coordinates are spread, and we can correct this.
 
 The plot is referenced in the longitude latitude coordinate so you must have the package `proj4` if you are in this situation. If you have projected coordinate, you can continue with the `projCoord` argument instead of `longlat` argument. 
 
