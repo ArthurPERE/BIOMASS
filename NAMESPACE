@@ -2,7 +2,6 @@
 
 export(AGBmonteCarlo)
 export(attributeTree)
-export(attributeTreeCoord)
 export(computeAGB)
 export(computeE)
 export(computeFeldRegion)
