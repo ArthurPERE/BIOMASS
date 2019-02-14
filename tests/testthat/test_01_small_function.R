@@ -147,6 +147,12 @@ for (method in c("log1", "log2", "log3", "weibull", "michaelis")) {
     for (err in c(T, F)) {
       expect_length(predictHeight(D, HDmodel, err = err), length(D))
       expect_is(predictHeight(D, HDmodel, err = err), "numeric")
+      
+      if (err == T){
+        H = predictHeight(rep(10, 10), HDmodel, err = err)
+        expect_false(all(H == H[1]))
+      }
+        
     }
   })
 }
